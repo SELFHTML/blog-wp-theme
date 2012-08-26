@@ -1,0 +1,215 @@
+/*   
+Theme Name: SELFHTML (based on Waipoua)
+Author: SELFHTML
+Template: waipoua
+*/
+
+/* Use @import, to borrow the style sheet from the Waipoua parent theme */
+@import url('../waipoua/style.css');
+
+
+/* fonts */
+
+body,
+#site-title h2#site-description,
+.header-widget-area h3.widget-title,
+#featuredposts h3.featured-title,
+.author-info h3,
+#comments h3#comments-title,
+#comments h3#comments-title span,
+.page-header h2.page-title,
+#sidebar .widget h3.widget-title, 
+#sidebar .widget_get_recent_comments h1.widget-title,
+#site-nav-container #s,
+#comments #respond h3#reply-title,
+#respond a#cancel-comment-reply-link,
+#commentform input#author, 
+#commentform input#email, 
+#commentform input#url,
+#content .wpcf7 input.wpcf7-text,
+#commentform textarea#comment,
+#content .wpcf7 textarea,
+input#submit, 
+input.wpcf7-submit,
+.widget_search #s,
+.jetpack_subscription_widget form#subscribe-blog input#subscribe-field,
+.jetpack_subscription_widget form#subscribe-blog input[type="submit"],
+#content .page ul#smart-archives-block {
+	font-family: Calibri, 'PT Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', Calibri, 'PT Sans', sans-serif;
+}
+
+
+/* colors */
+
+#site-nav,
+blockquote,
+.single-post .entry-meta .author-info,
+#commentform input#author, 
+#commentform input#email, 
+#commentform input#url,
+#content .wpcf7 input.wpcf7-text,
+#commentform textarea#comment,
+#content .wpcf7 textarea,
+.format-quote blockquote,
+.format-chat ul.chat li.odd,
+.lightgrey-box,
+#sidebar,
+#content .page ul#smart-archives-block {
+	background-color: #f1f3f4;
+}
+
+
+/* borders */
+
+#site-nav ul ul li:last-child a,
+#site-nav li a,
+.post,
+table thead,
+table tr,
+table tr th,
+table tr td,
+#featuredposts h3.featured-title,
+#comments .comment-content .comment-text,
+#comments ol li.pingback,
+#commentform input#author, 
+#commentform input#email, 
+#commentform input#url,
+#content .wpcf7 input.wpcf7-text,
+#commentform textarea#comment,
+#content .wpcf7 textarea,
+.search-results .page,
+.single-post #nav-below,
+.ie #site-nav ul.sub-menu,
+.ie #site-nav ul.children,
+#site-nav ul.sub-menu,
+#site-nav ul.children,
+#site-nav li li a {
+	border-color: #e0e9ec; /* darker */
+}
+#site-nav ul ul li:last-child a,
+#site-nav li a,
+.post,
+#featuredposts h3.featured-title,
+#comments .comment-content .comment-text,
+#comments ol li.pingback,
+.search-results .page,
+.single-post #nav-below {
+	border-width: 2px; /* thicker */
+}
+
+
+
+/* header */
+
+#site-nav-wrap {
+    background-color: #699cb3;
+    background-image: -webkit-gradient(linear, left top, right top, from(#75b0ca), to(#4089aa));
+    background-image: -webkit-linear-gradient(left, #75b0ca, #4089aa);
+    background-image: -moz-linear-gradient(left, #75b0ca, #4089aa);
+    background-image: -o-linear-gradient(left, #75b0ca, #4089aa);
+    background-image: linear-gradient(to right, #75b0ca, #4089aa);
+    border-top: 1px solid #0070a2;
+    border-bottom: 3px double #fff;
+}
+
+
+/* branding */
+
+#branding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* logo */
+
+@media screen and (min-width: 1024px) {
+    #site-title .logo {
+        margin-left: 15px;
+    }
+}
+
+
+/* featured posts (column) */
+
+#featuredposts .entry-summary p {
+	font-size: 1em; /* smaller */
+}
+
+
+/* quotes */
+
+#content blockquote {
+    border: 0;
+    padding: 0;
+	background: transparent;
+}
+#content blockquote p {
+	border-left: 12px solid #f1f3f4;
+	padding: 0 0 0 20px;
+	line-height: 1.4 !important;
+	color: #727777;
+}
+#content blockquote p + p {
+    border-left-color: transparent;
+}
+#content cite {
+    display: block;
+	margin: 5px 30px 0 0;
+	text-align: right;
+}
+
+
+/* social links
+   increase css specifity!
+*/
+
+#header ul.sociallinks li a {
+	background-color: #fdc07b;
+}
+#header ul.sociallinks li a.github {
+	background-color: #999;
+}
+#header ul.sociallinks li a.twitter {
+	background-color: #0faaf2;
+}
+
+
+/* widget: twitter */
+
+#sidebar #twitter_update_list {
+}
+#sidebar #twitter_update_list li {
+    font-size: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: -1px 0 0 0;
+    padding: 10px 0 5px 0;
+    text-align: right;
+}
+#sidebar #twitter_update_list li span {
+    display: block;
+    text-align: left;
+}
+#sidebar #twitter_update_list li > span + a {
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 5px;
+}
+#sidebar #twitter_update_list li > span + a:hover,
+#sidebar #twitter_update_list li > span + a:focus {
+    text-decoration: underline;
+}
+
+
+/* widget: links */
+
+#sidebar .widget_links ul li {
+	padding-bottom: 0;
+}
+
+
+
