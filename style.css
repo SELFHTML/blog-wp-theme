@@ -211,5 +211,10 @@ table tr td,
 	padding-bottom: 0;
 }
 
+/* plugin: Basic Comment Quicktags */
 
-
+#content .quicktags-toolbar {
+    width: 96%;
+    padding-left: 11px;
+    padding-right: 11px;
+}
